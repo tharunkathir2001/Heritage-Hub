@@ -1,0 +1,2 @@
+rootProject.name = "HERITAGE HUB"
+include ':app'

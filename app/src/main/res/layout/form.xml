@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFF0"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text_head1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="POST YOUR ARTICLE"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/tile_edt_text"
+            android:layout_width="300dp"
+            android:background="@drawable/article_txt_bg"
+            android:hint="Title"
+            android:drawableLeft="@drawable/ic_baseline_title_24"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/text_head1"
+            android:textColor="@color/black"
+            android:drawablePadding="2dp"
+
+            android:textColorHint="@color/black"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/des_edt_text"
+            android:layout_width="300dp"
+            android:hint="Description"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/tile_edt_text"
+            android:textColor="@color/black"
+            android:drawablePadding="2dp"
+            android:background="@drawable/article_txt_bg"
+            android:drawableLeft="@drawable/ic_baseline_description_24"
+            android:textColorHint="@color/black"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/cont_edt_text"
+            android:layout_width="300dp"
+            android:hint="Type Something..."
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/article_txt_bg"
+
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/des_edt_text"
+            android:textColor="@color/black"
+            android:drawablePadding="2dp"
+            android:drawableLeft="@drawable/ic_baseline_create_24"
+            android:textColorHint="@color/black"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/imagelink_edt_text"
+            android:layout_width="300dp"
+            android:hint="Image Url"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/cont_edt_text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/article_txt_bg"
+            android:drawablePadding="2dp"
+            android:drawableLeft="@drawable/ic_baseline_link_24"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/postbtn"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/imagelink_edt_text"
+            android:layout_marginTop="30dp"
+            android:text="POST"
+            android:textAlignment="gravity"
+            android:fontFamily="@font/poppins"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="#FA526C"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

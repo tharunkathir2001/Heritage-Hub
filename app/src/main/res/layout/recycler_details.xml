@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_card_view"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_card_view_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFF0">
+
+            <RelativeLayout
+                android:id="@+id/image_layout_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/recycler_img_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/cover_bg" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="VELLORE"
+                    android:textColor="#FFFEFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/name_add_layout_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_layout_home"
+                android:layout_marginRight="5dp"
+                android:background="#e8e8e8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_description_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textMultiLine"
+                    android:text="2/55 Baharahjrb gxystg kaij f154 65454hf 60.1485"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/article_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/description"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Article by tharun"
+                    android:textColor="#F10404"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

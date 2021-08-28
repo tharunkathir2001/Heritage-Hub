@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2F3C"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/back_arrow_staff_reg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backarw"
+        android:rotation="-180"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/sign_up_txt_staff_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Sign Up"
+        android:layout_below="@+id/back_arrow_staff_reg"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/pls_fill"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/sign_up_txt_staff_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill the details here"
+        android:fontFamily="@font/poppins"
+        android:textSize="17sp"
+        android:textColor="#FFF"
+        android:layout_marginLeft="20dp"
+        android:textStyle="normal"
+        />
+
+
+    <EditText
+        android:id="@+id/name_staff_reg"
+        android:layout_marginTop="60dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pls_fill"
+        android:hint="Name"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/mail_id_staff_reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name_staff_reg"
+        android:hint="Email Id"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/college_staff_reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mail_id_staff_reg"
+        android:hint="Phone number"
+        android:background="@drawable/input_field_bg"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dummy"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="310dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/college_staff_reg"
+        android:layout_height="wrap_content"
+        android:hint="      "
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="#FA526C">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_staff_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/input_field_bg"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dummy1_reg"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="310dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/dummy"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="      "
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="#FA526C">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_password_staff_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/input_field_bg"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/register_btn_staff"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/dummy1_reg"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="REGISTER"
+        app:backgroundTint="@null"
+        android:textAlignment="center"
+        android:paddingLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="15dp"
+        android:textSize="18sp"
+        android:background="#FA526C"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2F3C"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/sign_in_txt_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Sign In"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_img_std"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/sign_in_txt_std"
+        app:lottie_rawRes="@raw/login"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/user_id_edit_txt_std"
+        android:layout_marginTop="15dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_img_std"
+        android:hint="Mail Id"
+        android:background="@drawable/input_field_bg"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dummy"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="310dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/user_id_edit_txt_std"
+        android:layout_height="wrap_content"
+        android:hint="      "
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="#FA526C"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_txt_std"
+            android:cursorVisible="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/input_field_bg"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/sign_in_btn_std"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/dummy"
+        android:layout_marginTop="17dp"
+        android:text="LOGIN"
+        android:textAlignment="gravity"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="#FA526C"
+        app:backgroundTint="@null"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/dont_txt_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_btn_std"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins"
+        android:text="Don't Have An Account?"
+        android:textColor="#808088"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/sign_up_txt_std"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@+id/sign_in_btn_std"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/dont_txt_std"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="18sp"
+        android:textColor="#DC3E3D"
+        android:layout_marginLeft="7dp"
+        android:textStyle="normal"
+        />
+
+
+
+
+</RelativeLayout>
